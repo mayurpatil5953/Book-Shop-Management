@@ -35,7 +35,7 @@ public class BookShop{
         System.out.println("Select from the above product and write its quantity[-1 to exit]:(ex- 3 6 , this means you want the 3rd product and the quantity should be 6. )");
         
         int take1,take2;
-        int j = 0;
+        //int j = 0;
         Scanner sc = new Scanner(System.in);
         Cart c1 = new Cart();
         take1 = sc.nextInt(); //product name
@@ -50,7 +50,7 @@ public class BookShop{
         String s = sc.nextLine();
         CustomerName cn = new CustomerName();
         cn.setName(s);
-        
+        sc.close();
         c1.finalizeCart(cn.getName());
         System.out.println("-------------------------------------------------");
         // System.out.println("Checkout? Enter your Name:");
